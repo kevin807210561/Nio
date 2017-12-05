@@ -139,6 +139,10 @@ Misc tools
 	margin-top: 10px !important;
 }
 
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+
 .margin-left-0 {
   margin-left: 0 !important;
 }
@@ -3079,4 +3083,9 @@ Styler Panel
 
 .fancybox-opened {
   z-index: 100001;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
 }
