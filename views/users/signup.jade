@@ -1,0 +1,62 @@
+extends ../layout/layout
+
+block content
+    .main
+        .container
+            .margin-bottom-65.padding-top-60
+            // BEGIN SIDEBAR & CONTENT
+            .row.margin-bottom-40
+                // BEGIN CONTENT
+                .col-md-9.col-sm-9.col-centered
+                    h1.text-center Sign up
+                    .content-form-page
+                        .row
+                            .col-md-7.col-sm-7
+                                form.form-horizontal(role='form')
+                                    fieldset
+                                        legend Your personal details
+                                        .form-group
+                                            label.col-lg-4.control-label(for='firstname')
+                                                | First Name
+                                                span.require *
+                                            .col-lg-8
+                                                input#firstname.form-control(type='text')
+                                        .form-group
+                                            label.col-lg-4.control-label(for='lastname')
+                                                | Last Name
+                                                span.require *
+                                            .col-lg-8
+                                                input#lastname.form-control(type='text')
+                                        .form-group
+                                            label.col-lg-4.control-label(for='email')
+                                                | Email
+                                                span.require *
+                                            .col-lg-8
+                                                input#email.form-control(type='text')
+                                    fieldset
+                                        legend Your password
+                                        .form-group
+                                            label.col-lg-4.control-label(for='password')
+                                                | Password
+                                                span.require *
+                                            .col-lg-8
+                                                input#password.form-control(type='text')
+                                        .form-group
+                                            label.col-lg-4.control-label(for='confirm-password')
+                                                | Confirm password
+                                                span.require *
+                                            .col-lg-8
+                                                input#confirm-password.form-control(type='text')
+                                    .row
+                                        .col-lg-8.col-md-offset-4.padding-left-0.padding-top-20
+                                            button.btn.btn-primary(type='submit') Create an account
+                            .col-md-4.col-sm-4.pull-right
+                                .form-info
+                                    h2
+                                        em Nio
+                                    p Capture nice moment.
+                // END CONTENT
+            // END SIDEBAR & CONTENT
+            .margin-bottom-65.padding-top-60
+
+block footer

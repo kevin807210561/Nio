@@ -1,0 +1,57 @@
+extends ../layout/layout
+
+block content
+    .main
+        .container
+            .margin-bottom-65.padding-top-60
+            // BEGIN SIDEBAR & CONTENT
+            .row
+                // BEGIN CONTENT
+                .col-md-9.col-sm-9.col-centered
+                    h1.text-center Sign in
+                    .content-form-page
+                        .row
+                            .col-md-7.col-sm-7
+                                form.form-horizontal.form-without-legend(role='form')
+                                    .form-group
+                                        label.col-lg-4.control-label(for='email')
+                                            | Email
+                                            span.require *
+                                        .col-lg-8
+                                            input#email.form-control(type='text')
+                                    .form-group
+                                        label.col-lg-4.control-label(for='password')
+                                            | Password
+                                            span.require *
+                                        .col-lg-8
+                                            input#password.form-control(type='text')
+                                    .row
+                                        .col-lg-8.col-md-offset-4.padding-left-0
+                                            a(href='page-forgotton-password.html') Forget Password?
+                                    .row
+                                        .col-lg-8.col-md-offset-4.padding-left-0.padding-top-20
+                                            button.btn.btn-primary(type='submit') Login
+                                    .row
+                                        .col-lg-8.col-md-offset-4.padding-left-0.padding-top-10.padding-right-30
+                                            hr
+                                            .login-socio
+                                                p.text-muted or login using:
+                                                ul.social-icons
+                                                    li
+                                                        a.facebook(href='javascript:;', data-original-title='facebook', title='facebook')
+                                                    li
+                                                        a.twitter(href='javascript:;', data-original-title='Twitter', title='Twitter')
+                                                    li
+                                                        a.googleplus(href='javascript:;', data-original-title='Google Plus', title='Google Plus')
+                                                    li
+                                                        a.linkedin(href='javascript:;', data-original-title='Linkedin', title='LinkedIn')
+                            .col-md-4.col-sm-4.pull-right
+                                .form-info
+                                    h2
+                                        em Nio
+                                    p Capture nice moment.
+                // END CONTENT
+            // END SIDEBAR & CONTENT
+            .margin-bottom-65.padding-top-60
+
+block footer

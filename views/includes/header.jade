@@ -1,0 +1,27 @@
+.header
+  .container
+    a.site-logo(href='index.html')
+      img(src='assets/corporate/img/logos/logo-corp-red.png', alt='Metronic FrontEnd')
+    a.mobi-toggler(href='javascript:void(0);')
+      i.fa.fa-bars
+    // BEGIN NAVIGATION
+    .header-navigation.pull-right.font-transform-inherit
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/users/signin') Sign in
+        li
+          a(href='/users/signup') Sign up
+        // BEGIN TOP SEARCH
+        li.menu-search
+          span.sep
+          i.fa.fa-search.search-btn
+          .search-box
+            form(action='#')
+              .input-group
+                input.form-control(type='text', placeholder='Search')
+                span.input-group-btn
+                  button.btn.btn-primary(type='submit') Search
+        // END TOP SEARCH
+    // END NAVIGATION
